@@ -1,10 +1,14 @@
-﻿using System.Xml.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
+using System.Xml.Linq;
 
 namespace Domain
 {
     public class Activity
     {
+        [Required]
         public Guid Id { get; set; }
+        [NotNull]
         public string Title { get; set; }
         public DateTime Date { get; set; }
         public string Description { get; set; }
