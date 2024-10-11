@@ -15,6 +15,7 @@ namespace API.Extensions
             {
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.User.RequireUniqueEmail = true;
+               
             })
             .AddEntityFrameworkStores<DataContext>();
 
